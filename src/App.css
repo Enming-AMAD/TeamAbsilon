@@ -1,0 +1,74 @@
+@font-face {
+  font-family: 'Font1';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/NIXGONFONTS.TTF') format('truetype')
+}
+
+body {
+    font-family: 'Font1';
+
+    margin: 0;
+}
+
+.root {
+    background-color: #ffffff;
+    height: calc(100vh);
+}
+
+.header {
+    background-color: #f3f3f3;
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+
+    color: black;
+}
+
+.slogan > ul {
+    display: flex;
+    flex-direction: row;
+
+    list-style: none;
+
+    margin-block-start: 0;
+}
+.slogan > ul > li {
+    padding-top: 5px;
+    padding-right: 15px;
+}
+.logo {
+    height: 50px;
+}
+.name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.tab {
+    color: rgb(0, 0, 0);
+    font-size: 22px;
+
+    transition: background-color 0.2s;
+    padding: 7px 17px 7px 17px;
+    border-radius: 5px;
+
+    text-decoration: none;
+}
+.tab:hover {
+    background-color: #1e6dee;
+    color: white;
+}
+
+.tabsContainer {
+    display: flex;
+    flex-direction: row;
+
+    padding-left: calc(100vw - 870px);
+}
+.tabsContainer > li {
+    list-style: none;
+    padding-left: 15px;
+    height: 50px;
+    padding-top: 3px;
+}
