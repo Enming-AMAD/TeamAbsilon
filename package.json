@@ -2,7 +2,7 @@
   "name": "team_absilon",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://absilon.dacon.xyz",
+  "homepage": "https://absilon.kro.kr",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.2.1",
@@ -23,7 +23,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "cname": "echo absilon.dacon.xyz > build\\CNAME",
+    "cname": "echo absilon.kro.kr > build\\CNAME",
     "nojekyll": "echo > build\\.nojekyll",
     "predeploy": "npm run build && npm run cname && npm run nojekyll",
     "deploy": "gh-pages --add --dotfiles -d build"
