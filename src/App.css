@@ -73,3 +73,36 @@ body {
     height: 50px;
     padding-top: 3px;
 }
+
+.projectTree {
+    width: 150px;
+    height: 110px;
+
+    position: absolute;
+    right: 342px;
+    top: 60px;
+
+    background-color: white;
+    border: 2px solid rgb(224, 224, 224);
+    border-radius: 10px;
+}
+
+.projectsList {
+    list-style: none;
+
+    padding-inline-start: 5px;
+}
+.projectsList > li {
+    width: 140px;
+
+    text-align: center;
+}
+.projectName {
+    width: 140px;
+    height: 40px;
+}
+
+.hr {
+    margin-top: 15px;
+    height: 0;
+}

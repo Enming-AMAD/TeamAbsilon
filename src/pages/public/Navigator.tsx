@@ -11,4 +11,4 @@ const tabs = names.map((name) =>
     <li>{name}</li>
 )
 
-export default tabs
+export default tabs;

@@ -6,6 +6,7 @@ import './App.css';
 import logo from "./images/logo.png"
 
 import NavigatorBar from "./pages/public/Navigator"
+import projectTree from "./pages/public/Projects"
 
 class App extends Component {
   render() {
@@ -13,6 +14,9 @@ class App extends Component {
       <div className="root">
         <BrowserRouter>
           <NavigatorHead></NavigatorHead>
+          <div className="projectTree">
+            <ProjectTree></ProjectTree>
+          </div>
           <Switch>
             <Route path="/" exact component={Main} />
             <Route component={NotFound} />
@@ -43,6 +47,16 @@ class NavigatorHead extends Component {
           {NavigatorBar}
         </ul>
       </div>
+    )
+  }
+}
+
+class ProjectTree extends Component {
+  render() {
+    return (
+      <ul className="projectsList">
+        {projectTree}
+      </ul>
     )
   }
 }
