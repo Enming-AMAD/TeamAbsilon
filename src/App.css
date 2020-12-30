@@ -1,8 +1,8 @@
 @font-face {
-  font-family: 'Font1';
-  font-style: normal;
-  font-weight: 400;
-  src: url('./fonts/NIXGONFONTS.TTF') format('truetype')
+    font-family: 'Font1';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/NIXGONFONTS.TTF') format('truetype')
 }
 
 body {
@@ -74,19 +74,6 @@ body {
     padding-top: 3px;
 }
 
-.projectTree {
-    width: 150px;
-    height: 110px;
-
-    position: absolute;
-    right: 342px;
-    top: 60px;
-
-    background-color: white;
-    border: 2px solid rgb(224, 224, 224);
-    border-radius: 10px;
-}
-
 .projectsList {
     list-style: none;
 
@@ -105,4 +92,51 @@ body {
 .hr {
     margin-top: 15px;
     height: 0;
+
+    width: 120px;
+}   
+.dropdown {
+    float: left;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.dropdown-content .dropdown-content>ul>li {
+    display: block;
+}
+
+.dropdown-content>.projectTree>ul>li {
+    list-style: none;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.expandMenu {
+    width: 560px;
+    height: 95px;
+
+    position: absolute;
+    right: 12px;
+    top: 70px;
+
+    padding-top: 15px;
+
+    background-color: white;
+
+}
+
+.projectTree {
+    width: 200px;
+    margin-left: 36px;
+
+    text-align: center;
 }

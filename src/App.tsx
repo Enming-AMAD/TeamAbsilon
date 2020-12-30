@@ -14,9 +14,6 @@ class App extends Component {
       <div className="root">
         <BrowserRouter>
           <NavigatorHead></NavigatorHead>
-          <div className="projectTree">
-            <ProjectTree></ProjectTree>
-          </div>
           <Switch>
             <Route path="/" exact component={Main} />
             <Route component={NotFound} />
@@ -43,22 +40,21 @@ class NavigatorHead extends Component {
             </li>
           </ul>
         </div>
-        <ul className="tabsContainer">
+        <ul className="tabsContainer dropdown">
           {NavigatorBar}
+          <div className="dropdown">
+            <div className="expandMenu dropdown-content">
+              <div className="projectTree">
+                <ul>
+                  {projectTree}
+                </ul>
+              </div>
+            </div>
+          </div>
         </ul>
+
       </div>
     )
   }
 }
-
-class ProjectTree extends Component {
-  render() {
-    return (
-      <ul className="projectsList">
-        {projectTree}
-      </ul>
-    )
-  }
-}
-
 export default App;
