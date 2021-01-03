@@ -1,0 +1,66 @@
+.pg_box {
+    display: flex;
+    flex-direction: row;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    
+    margin-top: -10vw;
+    margin-left: -42vw;
+
+    z-index: 0;
+}
+
+.pg_box > li {
+    list-style: none;
+}
+
+.pg_logo {
+    width: min(25vw, 400px);
+
+    animation-name: fadein_atype;
+    animation-duration: 1s;
+}
+
+.pg_info {
+    padding-top: 2.5vw;
+}
+
+.pg_info > li {
+    list-style: none;
+    padding-inline-start: 0;
+}
+
+.pg_title {
+    font-size: min(6.5vw, 75px);
+    font-weight: 600;
+
+    animation-name: fadein_btype;
+    animation-duration: 1s;
+}
+
+.pg_desc {
+    font-size: min(3.25vw, 37.5px);
+
+    animation-name: fadein_btype;
+    animation-duration: 1s;
+}
+
+.pg_invite {
+    margin-top: 2.3vw;
+
+    animation-name: fadein_atype;
+    animation-duration: 1s;
+}
+
+.pg_invbutton {
+    background-color: #1e6dee;
+    color: white;
+    border-radius: 8px;
+
+    font-size: min(3vw, 34.8px);
+    text-decoration: none;
+
+    padding: 1vw 2vw 1vw 2vw;
+}

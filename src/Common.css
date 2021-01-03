@@ -1,0 +1,29 @@
+.button_atype {
+    background-color: #1e6dee;
+}
+
+.button_atype:hover {
+    background-color: #508ef2;
+}
+
+@keyframes fadein_atype {
+    from {
+        opacity: 0;
+    }
+  
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadein_btype {
+    from {
+        opacity: 0;
+        margin-left: 12px;
+    }
+  
+    to {
+        opacity: 1;
+        margin-left: 0;
+    }
+}

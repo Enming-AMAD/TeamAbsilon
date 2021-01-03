@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { Switch, Route, BrowserRouter } from "react-router-dom";
-import { Main, NotFound } from "./pages";
+import { Main, PlayGameBot, NotFound } from "./pages";
 import './App.css';
+import './Common.css';
 
 import logo from "./images/logo.png"
 
@@ -16,6 +17,7 @@ class App extends Component {
           <NavigatorHead></NavigatorHead>
           <Switch>
             <Route path="/" exact component={Main} />
+            <Route path="/project/playgamebot" exact component={PlayGameBot} />
             <Route component={NotFound} />
           </Switch>
         </BrowserRouter>
