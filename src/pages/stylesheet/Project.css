@@ -1,3 +1,13 @@
+.pg_pg1 {
+    height: calc(100vh - 80px);
+}
+.pg_pg2 {
+    height: calc(100vh - 70px);
+
+    padding-top: 70px;
+    text-align: center;
+}
+
 .pg_box {
     display: flex;
     flex-direction: row;
@@ -63,4 +73,43 @@
     text-decoration: none;
 
     padding: 1vw 2vw 1vw 2vw;
+}
+
+.pg_bar {
+    background-color: #1e6dee;
+    height: 15px;
+    width: 40vw;
+
+    margin-top: 15px;
+    border-radius: 1000px;
+}
+
+.pg_elements {
+    width: 60%;
+    height: 80%;
+    overflow: hidden;
+
+    position: absolute;
+    left: 50%; margin-left: -30%;
+
+    margin-top: 60px;
+}
+
+.pg_element {
+   box-sizing: border-box;
+   padding: 10px;
+   float: left;
+   width: 50%;
+   height: 50%;
+
+   text-align: left;
+}
+
+.pg_element > img {
+    width: min(100%, 450px);
+}
+
+.pg_element > h2 {
+    color: gray;
+    font-size: 27px;;
 }
