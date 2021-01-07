@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Switch, Route, BrowserRouter } from "react-router-dom";
-import { Main, PlayGameBot, NotFound } from "./pages";
+import { Main, PlayGameBot, Privacy, NotFound } from "./pages";
 import './App.css';
 import './Common.css';
 
@@ -18,6 +18,7 @@ class App extends Component {
           <Switch>
             <Route path="/" exact component={Main} />
             <Route path="/project/playgamebot" exact component={PlayGameBot} />
+            <Route path="/privacy" exact component={Privacy} />
             <Route component={NotFound} />
           </Switch>
         </BrowserRouter>
